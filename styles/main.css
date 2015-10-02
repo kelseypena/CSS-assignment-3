@@ -7,7 +7,7 @@
 body {
     background: #b3dbe8;
     color: #000;
-    font-family: sans-serif; /*   add fonts here   */
+    font-family: Lora, Georgia, serif; /*   add fonts here   */
     font-size: 100%; /* DO NOT change */
     margin: 0; /* DO NOT change */
 }
@@ -48,7 +48,7 @@ aside {
 
 h1, h2 {
     margin: 0;
-    font-family: serif;  /*   add fonts here   */
+    font-family: Acme, "Arial Black", sans-serif;  /*   add fonts here   */
 }
 
 article h1 {
@@ -111,3 +111,26 @@ aside a:focus, aside a:hover {
 }
 
 /* media queries */
+
+@media (max-width: 830px) {
+    #top-image-container { 
+        display: none;
+    }
+    article {
+        width: 100%;
+        background: #eaeaea;
+    }
+        
+    aside {
+        width: 100%;
+        display: block;
+        margin: 0;
+        background: #0287b3;
+    }
+    #sidebar2 {
+        margin: 0;
+    } 
+    #container {
+        margin: 0;
+    }
+}
